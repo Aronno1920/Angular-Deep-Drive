@@ -23,14 +23,16 @@
 
 <div class="content" role="main">
 
-  <app-course-card (courseSelected)="onCourseSelected($event)" [course]="angularCourse"></app-course-card>
-  <app-course-card (courseSelected)="onCourseSelected($event)"[course]="gitCourse"></app-course-card>
-  <app-course-card (courseSelected)="onCourseSelected($event)"[course]="dockerCourse"></app-course-card>
-
+  <app-course-card *ngFor="let course of courseList;
+   even as isEven; odd as isOdd"
+   [class.even]="isEven"
+   [class.odd]="isOdd"
+   (courseSelected)="onCourseSelected($event)" 
+   [course]="course"></app-course-card>
 
   <!-- Footer -->
   <footer>
-      Love Angular?
+      Love Angular? 
   </footer>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">

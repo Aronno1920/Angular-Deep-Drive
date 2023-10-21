@@ -1,9 +1,17 @@
-.course-card{
+ 
+  .course-card{
     width: 300px;
     text-align: center;
     border:1px solid #1976d2;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .course-card.even{
+    background-color: red;
+  }
+  
+  .course-card.odd{
+    background-color: green;
   }
 
   .course-title{

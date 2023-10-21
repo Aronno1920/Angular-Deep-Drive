@@ -10,10 +10,7 @@ import { Course } from './model/Course';
 export class AppComponent {
   title = 'eLearning';
 
-
-  angularCourse = COURSES[0];
-  gitCourse = COURSES[1];
-  dockerCourse = COURSES[2];
+  courseList = COURSES;
 
   onCourseSelected(course:Course){
     alert('Click for '+course.title+' details page');
