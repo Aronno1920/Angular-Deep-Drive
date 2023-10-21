@@ -23,9 +23,9 @@
 
 <div class="content" role="main">
 
-  <app-course-card [course]="angularCourse"></app-course-card>
-  <app-course-card [course]="gitCourse"></app-course-card>
-  <app-course-card [course]="dockerCourse"></app-course-card>
+  <app-course-card (courseSelected)="onCourseSelected($event)" [course]="angularCourse"></app-course-card>
+  <app-course-card (courseSelected)="onCourseSelected($event)"[course]="gitCourse"></app-course-card>
+  <app-course-card (courseSelected)="onCourseSelected($event)"[course]="dockerCourse"></app-course-card>
 
 
   <!-- Footer -->
