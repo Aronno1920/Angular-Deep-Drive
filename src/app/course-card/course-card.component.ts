@@ -14,7 +14,6 @@ export class CourseCardComponent {
   @Output('courseSelected')
   courseEmitter = new EventEmitter<Course>();
 
-
   onClickViewDetails(){
     alert('Add to cart successfully.');
 

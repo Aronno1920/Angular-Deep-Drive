@@ -1,4 +1,5 @@
 export const COURSES: any = [
+    undefined,
     {
         id:1,
         title:"Angular Cheat Sheet: Complete Guide",
@@ -40,5 +41,10 @@ export const COURSES: any = [
         title:"How to redirect custom login page without plugins WordPress",
         description:"Docker is an open-source container manager that is used to develop, ship, and run applications using containers. This grants higher speed and a boost in performance along with reducing the size of the applications.",
         imagepath:"https://techaid24.com/wp-content/uploads/2021/03/How-to-redirect-custom-login-page-without-plugins-WordPress.png"
+    },
+    {
+        id:8,
+        title:"Task for *ngIf",
+        description:"If course image not avilable, then default image is show."
     }
 ]

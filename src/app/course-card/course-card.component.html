@@ -1,6 +1,14 @@
-<div class="course-card">
-    <img width="300" alt="Angular Logo"
+<div class="course-card" *ngIf="course">
+    <img width="300" alt="course.title"
+    *ngIf="course.imagepath else noImage"
     [src]="course.imagepath">
+
+    <ng-template #noImage>
+      <img width="300"
+      src="https://techaid24.com/wp-content/uploads/2021/06/no_image_available.png">
+    </ng-template>
+
+
     <div class="course-title">
       {{course.title}}
     </div>
