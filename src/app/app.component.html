@@ -23,7 +23,7 @@
 
 <div class="content" role="main">
 
-  <app-course-card *ngFor="let course of courseList;"
+  <app-course-card *ngFor="let course of courseList;odd as IsOdd;even as IsEven"
    (courseSelected)="onCourseSelected($event)" 
    [course]="course"></app-course-card>
 

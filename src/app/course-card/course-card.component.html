@@ -1,6 +1,5 @@
 <div class="course-card" *ngIf="course">
 
-
     <!-- <img width="300" alt="course.title"
     *ngIf="course.imagepath else noImage"
     [src]="course.imagepath">
@@ -10,15 +9,19 @@
       src="https://techaid24.com/wp-content/uploads/2021/06/no_image_available.png">
     </ng-template> -->
 
-
     <img width="300" [src]="setImagePath()">
-
 
     <div class="course-title">
       {{course.title}}
     </div>
     <div class="course-description">
       {{course.description}}
+    </div>
+    <div [ngSwitch]="course.category">
+      <span class="course-category" *ngSwitchCase="'B'">Beginner</span>
+      <span class="course-category" *ngSwitchCase="'I'">Intermediate</span>
+      <span class="course-category" *ngSwitchCase="'E'">Expert</span>
+      <span class="course-category" *ngSwitchDefault>All Levels</span>
     </div>
     <button (click)="onClickViewDetails()" class="course-AddCart">Add to Cart</button>
   </div>

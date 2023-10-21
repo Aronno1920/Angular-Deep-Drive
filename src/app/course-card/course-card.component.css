@@ -6,14 +6,7 @@
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .course-card.even{
-    background-color: red;
-  }
-  
-  .course-card.odd{
-    background-color: green;
-  }
-
+ 
   .course-title{
     font-size: 20px;
     font-weight: bold;
@@ -28,4 +21,10 @@
 
   .course-AddCart{
     margin: 5px;
+  }
+
+  .course-category{
+    background: aquamarine;
+    padding: 2px 5px;
+    font-size: 12px;
   }
