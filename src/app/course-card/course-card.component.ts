@@ -19,4 +19,15 @@ export class CourseCardComponent {
 
     this.courseEmitter.emit(this.course);
   }
+
+  setImagePath(): string{
+    let imageUrl:string ='';
+ 
+      if(this.course && this.course.imagepath){
+       imageUrl= this.course.imagepath;
+     }else{
+       imageUrl="https://techaid24.com/wp-content/uploads/2021/06/no_image_available.png";
+     }
+     return imageUrl;
+   }
 }
