@@ -12,6 +12,8 @@ export class AppComponent {
 
   courseList = COURSES;
 
+  startDate = new Date();
+
   onCourseSelected(course:Course){
     alert('Click for '+course.title+' details page');
   }

@@ -23,6 +23,8 @@
 
 <div class="content" role="main">
 
+  Start Date: {{startDate | date: 'dd MMMM, yyyy'}}
+  
   <app-course-card *ngFor="let course of courseList;odd as IsOdd;even as IsEven"
    (courseSelected)="onCourseSelected($event)" 
    [course]="course"></app-course-card>
